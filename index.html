@@ -20,18 +20,44 @@
 </script>
 <head>
 <body>
+<input type="file" id="imageLoader" name="imageLoader"/>
+
 <div id="head">
 <img id="fb-icon" src="fb-icon.png">
 <span id="title">Gerador de Efeitos</span>
 </div>
 
 
-<input type="file" id="imageLoader" name="imageLoader"/>
-
+<div id="cont-choose-effect">
+	<div class="title-choose-effect"><b>Passo 01:</b> <br>Escolha um Efeito para homenagear a sua "mainha".</div>
+	<div>   
+		<img class="choose-effect" effect="over-image" src="effect01.png">
+		<img class="choose-effect" effect="over-image2" src="effect02.png">
+		<img class="choose-effect" effect="over-image3" src="effect03.png">
+		<img class="choose-effect" effect="over-image4" src="effect04.png">
+		<img class="choose-effect" effect="over-image5" src="effect05.png">
+	</div>
+</div>
 
 <div id="cont-imageCanvas" >
+    <div class="title-choose-effect"><b>Passo 02:</b> <br>Escolha uma Foto e Ajuste</div>
 	<canvas id="imageCanvas" ></canvas>
-	<a id="bt-gerate" download>Baixar Imagem</a>
+	
+	<div id="cont-btn">
+		<span id="bt-left" class="btn-editimage">esquerda</span>
+		<span id="bt-right" class="btn-editimage">direita</span>
+		<span id="bt-up" class="btn-editimage"> cima </span>
+		<span id="bt-down" class="btn-editimage">baixo</span>
+		
+		<span id="bt-zoomin" class="btn-editimage">zoom in</span>
+		<span id="bt-zoomout" class="btn-editimage">zoom out</span>
+		
+	</div>
+	
+	<div id="cont-download">
+		<div  class="title-choose-effect"><b>Passo 03:</b> <br> Baixe e coloque em seu Perfil! </div>
+		<a id="bt-gerate" download>Baixar Imagem</a>
+	</div>
 </div>
 
 <script src="main.js"></script>

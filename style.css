@@ -28,6 +28,7 @@ body, documente{
 }
 
 #cont-imageCanvas{
+	display:none;
 	height:400px;
 	width: 400px;
 	margin-left:auto;
@@ -57,8 +58,13 @@ body, documente{
 	display:none;
 }
 
-#bt-gerate{
+#cont-download{
 	display:none;
+	width:100%;
+	height:20px;
+}
+#bt-gerate{
+	display:block;
 	background-color: #4267b2;
     border-color: #4267b2;
 	width:100%;
@@ -79,3 +85,53 @@ body, documente{
 	cursor:pointer;
 }
 
+
+.btn-editimage{
+	border: 1px solid #aaa;
+    color: #aaa;
+	padding:2px;
+	width: 90px;
+	height:20px;
+	border-radius:2px;
+	display:block;
+	text-align:center;
+	float:left;
+	margin-left:2px;
+	margin-top:5px;
+}
+
+#cont-btn{
+	display:none;
+	margin-left:auto;
+	margin-right:auto;
+	height:80px;
+}
+
+.btn-editimage:hover{
+	cursor:pointer;
+	background-color:#aaa;
+	color:#fff;
+}
+
+
+.choose-effect{
+	width:120px;
+	margin-left:10px
+}
+
+.choose-effect:hover{
+	cursor:pointer;
+}
+
+
+#cont-choose-effect{
+	margin-top:100px;
+	width:400px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.title-choose-effect{
+	margin-bottom:10px;
+	text-align:center;
+}
