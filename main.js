@@ -26,15 +26,19 @@ function handleImage(e){
         img.onload = function(){
 		
 		canvas.width = 400;
-			
 		canvas.height = 400;
 		
-        ctx.drawImage(img,0,0,img.width,img.height,0,0,canvas.width,	canvas.height);
+        ctx.drawImage(img,0,0,img.width,img.height,0,0,canvas.width,canvas.height);
 		  
 		var overimg = new Image();
 		
 		overimg.onload = function(){
-		    ctx.drawImage(overimg, 0, -canvas.height, img.width,img.height, 0, 0, canvas.width, canvas.height);
+		    ctx.drawImage(overimg, 0, 250, 400,150);
+			
+		   var dataURL = canvas.toDataURL('image/png');
+		  $("#bt-gerate").attr("href", dataURL);
+		  $("#bt-gerate").css("display","block");
+		 
 		}
 		   
 		   overimg.src = "over-image.png";
@@ -43,9 +47,7 @@ function handleImage(e){
 		img.src = event.target.result;
 		
 		
-		 var dataURL = canvas.toDataURL('image/png');
-		 $("#bt-gerate").attr("href", dataURL);
-		 $("#bt-gerate").css("display","block");
+		
 		
     }
 	
